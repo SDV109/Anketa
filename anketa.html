@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Anketa+1</title>
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+<!-- Header --> 
+    <div class="head"> 
+        <h4>Proektmarketing+1</h4>
+        <p>Я - разработчик</p>
+    </div>
+<!-- Body --> 
+    <div class="info">
+        <div class="info-text">
+            <h1 onclick="func()" ondblclick="func2()">Расскажите о себе</h1>
+            <p>Поля не являются обязательными но помимо
+            <br> вашего имени нам бы хотелось знать из какого<br>
+            вы города сколько вам лет и как с вами связаться </p>
+            <div class="hobbi" id="hob">
+                <h1>Ваше хобби</h1>
+                <textarea class="pole-hobbi" type="text">Сноубордист-любитель, верстальщик самоучка, раньше ещё скалолазаньем занимался :D          
+                </textarea>
+            </div>
+            <div class="image" id="imag">
+                <img src="Ql2iwGFwWfQ.jpg" alt="Лягушка">
+            </div>
+        </div>
+        <div class="info-input">
+            Имя<input type="text" placeholder="Ваше имя" value="Дмитрий">
+            Год рождения<input type="date" placeholder="Год рождения" value="1998-07-14">
+            Город<input type="text" placeholder="Ваш город" value="Красноярск">
+            Телеграмм<input type="text" placeholder="@Ваш ID" value="@TRAVEL109">
+            Почта<input type="email" placeholder="Ваша почта" value="viking19-98@mail.ru">
+        </div>
+    </div>
+    <div class="skills">
+        <div class="skills-text">
+            <h1>Отметьте ваши навыки</h1>
+            
+            <p>Отметьте чекбоксами пункты, которые <br> 
+            соответствуют вашим скиллам. Кстати, <br> 
+            отсутствие опыта не означает, что у вас меньше <br> 
+            шансов стать одним из наших товарищей. Это <br> 
+            означает, что вы будете получать те задачи, с <br> 
+            которыми гарантированно будете справляться.</p>
+        </div>
+        <div class="skills-check">
+            <div class="lev-check">
+                <input type=checkbox checked class="myradio" id="box1"><label for="box1">БЭМ/OOCSS</label>
+                <input type=checkbox class="myradio" id="box2"><label for="box2">Pug(Jade)</label>
+                <input type=checkbox class="myradio" id="box3"><label for="box3">Stylus/LESS/SASS</label>
+                <input type=checkbox class="myradio" id="box4"><label for="box4">Работаю с SVG</label>
+                <input type=checkbox checked class="myradio" id="box5"><label for="box5">Верстаю семантично</label>
+                <input type=checkbox class="myradio" id="box6"><label for="box6">Accessibility(A11Y)</label>
+                <input type=checkbox class="myradio" id="box7"><label for="box7">ES2015/ES2016</label>
+                <p></p>
+                <input type=checkbox class="myradio" id="box8"><label for="box8">Использую Git</label>
+                <input type=checkbox checked class="myradio" id="box9"><label for="box9">С глазомером всё ок</label>
+                <input type=checkbox class="myradio" id="box10"><label for="box10">Я ленивый</label>
+                <input type=checkbox checked class="myradio" id="box11"><label for="box12">Perfect English(no)</label>
+            </div>
+            <div class="prav-check">
+                <input type=checkbox checked class="myradio" id="box12"><label for="box12">Gulp/GRUNT</label>
+                <input type=checkbox class="myradio" id="box13"><label for="box13">Webpack</label>
+                <input type=checkbox class="myradio" id="box14"><label for="box14">Дружу с WebGL</label>
+                <input type=checkbox class="myradio" id="box15"><label for="box15">jQuery</label>
+                <input type=checkbox class="myradio" id="box16"><label for="box16">Знаю/изучаю Angular</label>
+                <input type=checkbox class="myradio" id="box17"><label for="box17">Знаю/изучаю React</label>
+                <input type=checkbox class="myradio" id="box18"><label for="box18">Знаю/изучаю Node.js</label>
+            </div>
+        </div>       
+    </div>
+    <div class="js">
+        <h1>Уровень владения JS</h1>
+        <div class="js-button">
+            <div class="button">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="text-js">
+                <p>Не владею</p>
+                <p>Использую готовые <br> решения</p>
+                <p>Использую готовые <br> решения и умею их <br> переделывать</p>
+                <p>Пишу сложный JS <br> с нуля</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-your">
+        <div class="left-info">
+            <h1>Расскажите о себе словами</h1>
+            <p>Напишите пару предложений, чем вас привлекла
+            <br> наша вакансия и чего вы ожидаете от работы в 
+            <br>Proektmarketing. Кстати, будет здорово, если при
+            <br> нехватке места для текста строки будут
+            <br> добавляться автоматически.</p>    
+        </div>
+        <div class="pole-info">
+            <textarea class="pole" type="text" placeholder="Введите текст">История изучения веба, а именно верстки в моем случае началась в Универе, по предмету пользовательского интерфейса. Будучи студуентом 2го курса, не зная ничего о вебе, мне помог парень с 4го курса, после я попросил мол расскажи о том что ты сделал, чтобы я смог рассказать/защитить и меня привлекла верстка. По гайдам из интернета получилась первая работа, но была хреновой и в скором времени она была переделана и получилось хорошо, по этому я пошел на практику по вебу (Тут должно было быть название студии) и практика была удачно, я подхватил не мало навыково, но произошла казусная ситуация и я ищу другое место для практики, как раз там от Дизанерши(была девушка) услышал хорошие отзывы о вашей фирме, а тут сразу покажу что могу(а там может и останусь помошником на пол ставки, а может как-нибудь иначе обговорим), c JS общаемся на вы, хотелось бы для начала хорошо научиться верстать, а после за JS. На этом все, спасибо за внимание :D            
+            </textarea>
+        </div>
+    </div>
+    <div class="nextplan">
+        <div class="nextplan-left">
+            <h1>Какие у вас планы на будущее</h1>
+            <p>Этот ответ ни на что не повлияет. Не беда,
+            <br> если в будущем ваши планы поменяются. </p>    
+        </div>
+        <div class="nextplan-radio">
+           <div class="radio-radio">
+               <div class="radio">
+                   <input type="radio" name="radio" class="myradio" id="radioOne" checked/>
+                   <label for="radioOne" class="One">Верстка</label>
+               </div>
+               <div class="radio">
+                   <input type="radio" name="radio" class="myradio" id="radioTwo" />
+                   <label for="radioTwo" class="Two">Прокачиваться в JS </label>
+               </div>
+               <div class="radio">
+                   <input type="radio" name="radio" class="myradio" id="radioThree" />
+                   <label for="radioThree" class="Three">Менеджерство</label>
+               </div>
+               <div class="radio">
+                   <input type="radio" name="radio" class="myradio" id="radioFour" />
+                   <label for="radioFour" class="Four">Другое(Уйти в калиграфию,<br> быть как Покрас Лампас)</label>
+               </div>
+            </div>
+           <div class="radio-button">
+                <input type="button" class="button-push" value="Отправить">       
+           </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

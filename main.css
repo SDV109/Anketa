@@ -1,0 +1,295 @@
+body{
+    margin-left: 2em;
+    color: #EDEDED;
+    background-color: #1E1B1B;
+}
+.head p{
+    font-size: 3.5em;
+}
+/* Info */
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.info-text{
+    width: 50%;
+}
+.image{
+    display: none;
+}
+.hobbi{
+    display: none;
+}
+.pole-hobbi{
+    resize: none;
+    width: 70%;
+    height: 50px;
+    background-color: #1E1B1B;;
+    color: #fff;
+    border: 1px solid #83E80A;
+}
+.info-text h1{
+    font-weight: 100;
+}
+.info-text p{
+    font-size: 1.3em;
+}
+.info-input{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #A6A5A5;
+}
+.info-input input{
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #1E1B1B;
+    border: 0;
+    border-bottom: 1px solid #A6A5A5;
+    margin: 0px;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 95%;
+}
+.info-input input:focus{
+    outline: 0;
+    border-bottom: 1px solid #83E80A;
+}
+/* Info */
+/* Skills */
+.skills{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4em;
+}
+.skills-text{
+    width: 50%;
+}
+.skills-text h1{
+    font-weight: 100;
+}
+.skills-text p{
+    font-size: 1.3em;
+}
+.skills-check{
+    width: 50%;
+    display: flex;
+    margin-top: 70px;
+}
+.skills-check label{
+    margin-top: 15px;
+}
+.lev-check{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.3em;
+}
+.prav-check{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.3em;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+    border-radius: 100%;
+    left: -30px;
+}
+.myradio:checked+label:before{
+    content: "\2022";
+    color: #83E80A;
+    font-size: 45px;
+    text-align: center;
+    line-height: 19px;
+}
+/* Skills */
+/* JS */
+.js{
+    margin-top: 100px;
+}
+.js h1{
+    font-weight: 100;
+}
+.js-button{
+    background-color: #83E80A;
+    height: 3px;
+    position: relative;
+}
+.button{
+    position: absolute;
+    top: -6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.button button{
+    height: 15px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #1E1B1B;
+    border: 2px solid #83E80A;
+}
+.button button:first-child{
+    background-color: #83E80A;
+}
+.text-js{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    padding-top: 15px;
+}
+/* JS */
+/* INFO-YOUR */
+.info-your{
+    display: flex;
+    margin-top: 250px;
+}
+.left-info{
+    width: 50%;
+}
+.left-info h1{
+    font-weight: 100;
+}
+.left-info p{
+    font-size: 1.3em;
+}
+.pole-info{
+    margin-top: 80px;
+    width: 50%;
+}
+.pole{
+    resize: none;
+    width: 90%;
+    height: 250px;
+    background-color: #1E1B1B;;
+    color: #EDEDED;
+    border: 1px solid #A6A5A5;
+}
+/* INFO-YOUR */
+/* NEXTPLAN */
+.nextplan{
+    margin-top: 95px;
+    display: flex;
+}
+.nextplan-left{
+    width: 50%;
+}
+.nextplan-left h1{
+    font-weight: 100;
+}
+.nextplan-left p{
+    font-size: 1.3em;
+}
+.nextplan-radio{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.button-push{
+    margin-left: 200px;
+    margin-top: 150px;
+    color: #83E80A;
+    font-size: 1.05em;
+    width: 125px;
+    height: 35px;
+    border-radius: 100px;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+}
+.button-push:hover{
+    font-size: 1.05em;
+    background-color: #83E80A;
+    border: 1px solid #83E80A;
+    color: #1E1B1B;
+}
+.radio{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    width: 45%;
+}
+.radio-radio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myradio {
+    display: none;
+}
+.One, .Two, .Three, .Four{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.One:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+    border-radius: 100%;
+    left: 30px;
+    top: -25px;
+}
+.Two:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+    border-radius: 100%;
+    left: 80px;
+    top: -25px;
+}
+.Three:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+    border-radius: 100%;
+    left: 63px;
+    top: -25px;
+}
+.Four:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid #83E80A;
+    background-color: #1E1B1B;
+    border-radius: 100%;
+    left: 125px;
+    top: -25px;
+}
+.myradio:checked + label:before{
+    content: "\2022";
+    color: #83E80A;
+    font-size: 45px;
+    text-align: center;
+    line-height: 19px;
+}
+/* NEXTPLAN */
